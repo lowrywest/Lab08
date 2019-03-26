@@ -11,5 +11,4 @@ public enum Location
 	LIBRARY,
 	BILLIARD_ROOM;
 	
-
 }
