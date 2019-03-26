@@ -6,7 +6,7 @@ public class GamePieceAppearance
 	private Shape shape;
 	
 	//Constructor
-	public void GamePieceApperance(Color color, Shape shape)
+	public GamePieceAppearance(Color color, Shape shape)
 	{
 		//Setting the global color and shape for the class equal to the parameters
 		this.color=color;

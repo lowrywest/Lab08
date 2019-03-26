@@ -5,8 +5,7 @@ public class BoardGame
 	//Initalizing the LinkedHashMaps
 	protected  LinkedHashMap<String, Location> locMap;
 	protected  LinkedHashMap<String, GamePiece> gameMap;
-	//Creating a private variable to hold the location to add the Player
-	private int loc=0;
+	
 	
 	public BoardGame()
 	{
@@ -36,7 +35,12 @@ public class BoardGame
 	
 	public String getPlayerWithGamePiece(GamePiece gamePiece)
 	{
-		return gameMap.get(gamePiece);
+		return null;	
+	}
+	
+	public void movePlayer(String playerName, Location newLocation)
+	{
 		
 	}
+	
 }
