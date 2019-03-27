@@ -41,8 +41,4 @@ public enum Color
 		return b;
 	}
 	
-	public String toString()
-	{
-		return name().toLowerCase();
-	}
 }
