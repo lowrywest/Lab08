@@ -24,11 +24,11 @@ public class ShapeTest {
 		 * Testing toString
 		 */
 		shap=Shape.BOOT;
-		Assert.assertEquals("Incorrect toString value for color "+ shap.name(), shap.name(), shap.toString());
+		Assert.assertEquals("Incorrect toString value for color "+ shap.name(), shap.name().toLowerCase(), shap.toString());
 		shap=Shape.RACECAR;
-		Assert.assertEquals("Incorrect toString value for color "+ shap.name(), shap.name(), shap.toString());
+		Assert.assertEquals("Incorrect toString value for color "+ shap.name(), shap.name().toLowerCase(), shap.toString());
 		shap=Shape.THIMBLE;
-		Assert.assertEquals("Incorrect toString value for color "+ shap.name(), shap.name(), shap.toString());
+		Assert.assertEquals("Incorrect toString value for color "+ shap.name(), shap.name().toLowerCase(), shap.toString());
 		
 	}
 

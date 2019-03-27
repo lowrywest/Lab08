@@ -1,6 +1,9 @@
 
 public enum Location 
 {
+	/*
+	 * Enum constants
+	 */
 	KITCHEN,
 	CONSERVATORY,
 	DINING_ROOM,
