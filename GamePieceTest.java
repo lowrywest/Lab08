@@ -69,5 +69,30 @@ public class GamePieceTest {
 		Assert.assertEquals("YELLOW_BOOT enum values incorrect.",GamePiece.YELLOW_BOOT, GamePiece.valueOf("YELLOW_BOOT"));
 		
 	} 
+	
+	@SuppressWarnings("deprecation")
+	@Test
+	public void movesFirstTest()
+	{
+		GamePiece tester1= GamePiece.RED_RACER;
+		GamePiece tester2= GamePiece.YELLOW_BOOT;
+		GamePiece tester3=GamePiece.RED_THIMBLE;
+		Assert.assertEquals("movesFirst returns the incorrect value ", tester1, GamePiece.movesFirst(tester1, tester2));
+		Assert.assertEquals("movesFirst returns the incorrect value ", tester2, GamePiece.movesFirst(tester3, tester2));
+		Assert.assertEquals("movesFirst returns the incorrect value ", tester1, GamePiece.movesFirst(tester1, tester3));
+	}
+	
+	@SuppressWarnings("deprecation")
+	@Test
+	public void toStringTest()
+	{
+		GamePiece tester1= GamePiece.RED_RACER;
+		GamePiece tester2= GamePiece.YELLOW_BOOT;
+		GamePiece tester3=GamePiece.RED_THIMBLE;
+		Assert.assertTrue("GamePiece toString incorrect", tester1.toString().equalsIgnoreCase("RED_RACER: a RED RACECAR with priority 0"));
+		Assert.assertTrue("GamePiece toString incorrect", tester2.toString().equalsIgnoreCase("YELLOW_BOOT: a YELLOW BOOT with priority 7"));
+		Assert.assertTrue("GamePiece toString incorrect", tester3.toString().equalsIgnoreCase("RED_THIMBLE: a RED THIMBLE with priority 10"));
+		
+	}
 
 }
